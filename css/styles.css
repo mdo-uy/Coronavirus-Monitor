@@ -1,0 +1,94 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #5a0e28;
+}
+
+/* PARALAX */
+
+#parallax {
+    background-position: 0px 0px;
+    height: 100vh;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/header-covid19.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: right;
+}
+
+#parallax h1 {
+    color: #e4e4bf;
+    font-size: 120px;
+    padding-top: 40vh;
+    padding-right: 200px;
+    margin-top: 0px;
+    font-weight: bolder;
+}
+
+#parallax p {
+    color: #e4e4bf;
+    font-size: 30px;
+    padding-right: 455px;
+}
+
+/* PARALAX END */
+
+#data {
+    height: 100vh !important;
+}
+
+/* CARDS */
+
+.card-panel {
+    height: 150px;
+}
+
+.card-panel h3 {
+    margin-top: 0px;
+    font-size: 30px;
+}
+
+.card-panel span {
+    font-size: 25px;
+}
+
+/* CARDS END */
+
+@media only screen and (max-width: 800px) {
+    #parallax h1 {
+        font-size: 80px;
+        padding-left: 30px;
+    }
+    #parallax p {
+        padding-right: 10%;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    #parallax h1 {
+        font-size: 60px;
+        padding-left: 30px;
+    }
+    #parallax p {
+        padding-right: 10%;
+    }
+    .card-panel img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 455px) {
+    #parallax h1 {
+        font-size: 45px;        
+    }
+    h2 {
+        font-size: 35px;
+    }
+}

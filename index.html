@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19</title>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- API -->
+    <script src="js/data.js"></script>
+
+    <script src="js/autocomplete.js"></script>
+    <script src="js/find-by-country.js"></script>
+
+</head>
+
+<body>
+    <div id="parallax">
+        <h1>CORONAVIRUS</h1>
+        <p>MONITOR</p>
+    </div>
+
+
+
+    <div class="container" id="data">
+        <h2 class="left-align">Total cases worldwide</h2>
+        <div class="row">
+            <!-- TOTAL DE CASOS -->
+            <div class="col s12 m4">
+                <div class="card-panel blue darken-3">
+                    <img class="col s12 m4" src="img/icon-world.png" alt="">
+                    <h3 class="white-text">Infected:</h3>
+                    <span id="total-casos" class="white-text">
+                    </span>
+                </div>
+            </div>
+            <!-- TOTAL DE CASOS END -->
+
+            <!-- MUERTES -->
+            <div class="col s12 m4">
+                <div class="card-panel  red darken-2">
+                    <img class="col s12 m4" src="img/icon-death.png" alt="">
+                    <h3 class="white-text">Deaths:</h3>
+                    <span id="total-muertes" class="white-text">
+                    </span>
+                </div>
+            </div>
+            <!-- MUERTES END -->
+
+            <!-- RECUPETADOS -->
+            <div class="col s12 m4">
+                <div class="card-panel teal lighten-1">
+                    <img class="col s12 m4" src="img/icon-recovered.png" alt="">
+                    <h3 class="white-text">Recoveries:</h3>
+                    <span id="total-recuperados" class="white-text">
+                    </span>
+                </div>
+            </div>
+            <!-- RECUPETADOS END -->
+        </div>
+
+        <!-- 
+        ###############################################################################
+                                        BÚSQUEDA POR PAÍS
+        ############################################################################### 
+        -->
+
+        <h2 class="left-align">Search by country</h2>
+
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <!-- <i class="material-icons prefix">textsms</i> -->
+                        <input type="text" id="autocomplete-input" class="autocomplete">
+                        <label for="autocomplete-input">Enter the country you want to search</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- TOTAL POR PAIS -->
+            <div class="col s12 m4">
+                <div class="card-panel blue darken-3">
+                    <img class="col s12 m4" src="img/icon-world.png" alt="">
+                    <h3 class="white-text">Infected:</h3>
+                    <span id="total-casos-pais" class="white-text">
+                    </span>
+                </div>
+            </div>
+            <!-- OTAL POR PAIS END -->
+
+            <!-- MUERTES POR PAIS -->
+            <div class="col s12 m4">
+                <div class="card-panel  red darken-2">
+                    <img class="col s12 m4" src="img/icon-death.png" alt="">
+                    <h3 class="white-text">Deaths:</h3>
+                    <span id="total-muertes-pais" class="white-text">
+                    </span>
+                </div>
+            </div>
+            <!-- MUERTES POR PAIS END -->
+
+            <!-- RECUPERADOS POR PAIS -->
+            <div class="col s12 m4">
+                <div class="card-panel teal lighten-1">
+                    <img class="col s12 m4" src="img/icon-recovered.png" alt="">
+                    <h3 class="white-text">Recoveries:</h3>
+                    <span id="total-recuperados-pais" class="white-text">
+                    </span>
+                </div>
+            </div>
+            <!-- RECUPERADOS POR PAIS END -->
+        </div>
+    </div>
+
+
+</body>
+
+</html>
